@@ -1,0 +1,276 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: whitesmoke;
+  font-family: "Poppins", sans-serif;
+  color: gray;
+}
+
+a {
+  text-decoration: none;
+  color: gray;
+  height: 100%;
+  cursor: pointer;
+}
+
+li {
+  list-style: none;
+}
+
+button{
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  color: gray;
+}
+
+#nav-tel {
+  display: flex;
+  justify-content: end;
+  gap: 1rem;
+  padding: 0.5rem 10rem;
+  background: darkblue;
+}
+
+#nav-tel a {
+  color: white;
+}
+
+#nav-menu {
+  background: whitesmoke;
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  padding: 0.5rem 10rem;
+}
+
+#nav-menu img {
+  width: 100px;
+}
+
+#menu {
+  display: flex;
+  font-size: 1.1rem;
+}
+
+#menu li {
+  padding: 1rem 2rem;
+}
+
+#nav-menu ul li a:hover{
+    color: darkgray;
+}
+
+#li-empresa {
+  position: relative;
+}
+
+#submenu1 {
+  display: none;
+  position: absolute;
+  flex-direction: column;
+  background: darkblue;
+  color: white;
+  right: 0;
+  z-index: 10;
+}
+
+
+
+#submenu1:last-child a img{
+  display: inline;
+}
+
+#submenu2 {
+  display: none;
+  position: absolute;
+  flex-direction: column;
+  background: darkblue;
+  color: white;
+  left: 150px;
+  top: 180px;
+  z-index: 10;
+}
+
+#li-menu{
+  display: none;
+  position: relative;
+}
+
+#li-menu button{
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1rem 0;
+  font-size: 1.1rem;
+}
+
+#li-menu button img, #li-empresa a img {
+  width: 20px;
+}
+
+#menu-responsivo{
+  width: 190px;
+  display: none;
+  background-color: darkblue;
+  position: absolute;
+  z-index: 10;
+  top: 50px;
+  right: 4px;
+  color: white;
+}
+
+#menu-responsivo li{
+  padding: 0.5rem 1.5rem;
+}
+
+#menu-responsivo li a{
+  color: white;
+}
+
+#submenu1-responsivo, #submenu2-responsivo{
+  display: none;
+}
+
+/* carousel */
+
+#carrousel{
+  width: 100%;
+  background: lightgray;
+}
+
+#slider{
+  margin: 0 auto;
+  width: 100%;
+  max-width: 894px;
+  height: 290px;
+  overflow: hidden;
+  position: relative;
+}
+
+.slides{
+  width: 400%;
+  height: 290px;
+  display: flex;
+  
+}
+
+.slides input{
+  display: none;
+}
+
+.slide{
+  width: 25%;
+  transition: 2s;
+}
+
+.slide img{
+  width: 100%;
+  height: 100%;
+  max-width: 894px;
+  object-fit: cover;
+}
+
+.manual-navigation{
+  position: absolute;
+  width: 800px;
+  display: flex;
+  left: 2rem;
+  bottom: 4rem;
+}
+
+.manual-btn{
+  border: 2px solid white;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.manual-btn:not(:last-child){
+  margin-right: 40px;
+}
+
+.manual-btn:hover{
+  background: white;
+}
+
+#radio1:checked ~ .first{
+  margin-left: 0;
+}
+
+#radio2:checked ~ .first{
+  margin-left: -25%;
+}
+#radio3:checked ~ .first{
+  margin-left: -50%;
+}
+
+#radio4:checked ~ .first{
+  margin-left: -75%;
+}
+
+.navigation-auto div{
+  border: 2px solid darkblue;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.navigation-auto{
+  position: absolute;
+  width: 800px;
+  margin-top: 360px;
+  display: flex;
+  justify-content: center;
+}
+
+.navigation-auto div:not(:last-child){
+  margin-right: 40px;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1{
+  background: white;
+}
+#radio2:checked ~ .navigation-auto .auto-btn1{
+  background: white;
+}
+#radio3:checked ~ .navigation-auto .auto-btn1{
+  background: white;
+}
+#radio4:checked ~ .navigation-auto .auto-btn1{
+  background: white;
+}
+
+#conteudo{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 1rem 10rem;
+}
+
+#conteudo img{
+  max-width: 325px;
+  height: 212px;
+}
+
+.conteudo-principal strong{
+  display: block;
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+.conteudo-principal ul li{
+  list-style: circle;
+}
+
+.conteudo-principal p{
+  display: block;
+  font-size: 1rem;
+  margin: 1rem 0;
+}

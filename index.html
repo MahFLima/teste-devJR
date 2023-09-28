@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/media.css" />
+    <script defer src="main.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    
+    <header>
+      <nav id="nav-tel">
+        <a href="">11 1234-1234</a>
+        <a href="">11 1234-1234</a>
+      </nav>
+      <nav id="nav-menu">
+        <img src="./assets/logo.svg" alt="logomarca slack" />
+        <ul id="menu">
+          <li><a href="#">HOME</a></li>
+          <li id="li-empresa">
+            <a id="a-empresa" class="link-menu"
+              >EMPRESA <img src="assets/menu.svg" alt="botão de menu"
+            /></a>
+            <ul id="submenu1">
+              <li><a href="">BLOG</a></li>
+              <li><a href="">GALERIA</a></li>
+              <li><a href="">EVENTOS</a></li>
+              <li>
+                <a href="" id="a-submenu">SERVIÇOS > </a>
+                <ul id="submenu2">
+                  <li><a href="">CONSULTORIA</a></li>
+                  <li><a href="">CLOUD</a></li>
+                  <li><a href="">BIG DATA</a></li>
+                  <li><a href="">UX & UI</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li><a href="#">CLIENTES</a></li>
+          <li><a href="#">CONTATO</a></li>
+        </ul>
+        <li id="li-menu">
+          <button id="btn-menu">
+            MENU<img src="assets/menu.svg" alt="botão de menu" />
+          </button>
+          <ul id="menu-responsivo">
+            <li><a href="">HOME</a></li>
+            <li>
+              <a id="a-empresa-responsivo">EMPRESA ></a>
+              <ul id="submenu1-responsivo">
+                <li><a href="">BLOG</a></li>
+                <li><a href="">GALERIA</a></li>
+                <li><a href="">EVENTOS</a></li>
+                <li>
+                  <a id="a-submenu-responsivo">SERVIÇOS ></a>
+                  <ul id="submenu2-responsivo">
+                    <li><a href="">CONSULTORIA</a></li>
+                    <li><a href="">CLOUD</a></li>
+                    <li><a href="">BIG DATA</a></li>
+                    <li><a href="">UX & UI</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li><a href="">CLIENTES</a></li>
+            <li><a href="">CONTATO</a></li>
+          </ul>
+        </li>
+      </nav>
+    </header>
+    
+    <section id="carrousel">
+      <section id="slider">
+        <div class="slides">
+          <!-- Radio Buttons -->
+          <input type="radio" name="radio-btn" id="radio1" />
+          <input type="radio" name="radio-btn" id="radio2" />
+
+          <!-- Slide Images -->
+          <div class="slide first">
+            <img
+              src="https://images.unsplash.com/photo-1632882765546-1ee75f53becb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1932&q=80"
+              alt="imagem 1"
+            />
+          </div>
+          <div class="slide">
+            <img
+              src="https://images.unsplash.com/photo-1621839673705-6617adf9e890?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1932&q=80"
+              alt="imagem 1"
+            />
+          </div>
+
+          <!-- Navigation auto -->
+          <section class="navigation-auto">
+            <div class="auto-btn1"></div>
+            <div class="auto-btn2"></div>
+          </section>
+
+          <section class="manual-navigation">
+            <label for="radio1" class="manual-btn"></label>
+            <label for="radio2" class="manual-btn"></label>
+          </section>
+        </div>
+      </section>
+    </section>
+
+    <section id="conteudo">
+      <div class="conteudo-principal">
+        <strong>TESTE DE HTML E CSS</strong>
+        <p>Quesitos de Avaliação</p>
+        <ul>
+          <li>Organização do código(quanto mais limpo menhor)</li>
+          <li>Nível de detalhismo(quanto mais identico, menhor)</li>
+          <li>Tempo de desenvolvimento(seja sincero ao enviar o tempo gasto)</li>
+        </ul>
+        <p>Obrigado e boa sorte</p>
+      </div>
+      <img src="https://images.unsplash.com/photo-1542831371-29b0f74f9713?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cHJvZ3JhbWElQzMlQTclQzMlQTNvfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60" alt="codigo HTML" />
+    </section>
+
+    <section id="destaque">
+      <strong>BOXES DE DESTAQUE</strong>
+      <figure>
+        <img src="https://i.pinimg.com/564x/7b/2d/2a/7b2d2a486677d37f6824222e1bd0e7cc.jpg" alt="logo react js">
+        <figcaption>Consumindo uma API com React.JS e Axios</figcaption>
+      </figure>
+      <figure>
+        <img src="https://i.pinimg.com/564x/bf/bc/4a/bfbc4a912d3ae7fdaad6a922621c73df.jpg" alt="Trulli">
+        <figcaption>Entenda as diferenças entre as linguagens CSS e SASS</figcaption>
+      </figure>
+      <figure>
+        <img src="https://i.pinimg.com/236x/33/39/f6/3339f6c27e55de8125e406fc55a4f793.jpg" alt="Trulli">
+        <figcaption>Introdução a Typescript: o que é e como começar?</figcaption>
+      </figure>
+      <figure>
+        <img src="https://i.pinimg.com/564x/02/52/24/02522489c146f5ca91d8c5b6496cbf10.jpg" alt="Trulli">
+        <figcaption>Vue.js Tutorial</figcaption>
+      </figure>
+    </section>
+
+  </body>
+</html>

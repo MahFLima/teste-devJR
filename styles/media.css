@@ -1,0 +1,32 @@
+@media (max-width: 1400px) {
+  #conteudo {
+    padding: 0.5rem 3rem;
+  }
+}
+
+@media (max-width: 1200px) {
+  #nav-tel,
+  #nav-menu {
+    padding: 0.5rem 3rem;
+  }
+
+  #conteudo {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 920px) {
+  #menu {
+    display: none;
+  }
+  #li-menu {
+    display: flex;
+  }
+}
+
+@media (max-width: 630px) {
+  #nav-tel,
+  #nav-menu {
+    padding: 0.5rem 1rem;
+  }
+}
