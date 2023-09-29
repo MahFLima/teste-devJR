@@ -1,9 +1,3 @@
-@media (max-width: 1400px) {
-  #conteudo, #destaque{
-    padding: 0.5rem 3rem;
-  }
-}
-
 @media (max-width: 1200px) {
   #nav-tel,
   #nav-menu {
@@ -11,7 +5,11 @@
   }
 
   #conteudo {
-    justify-content: center;
+    gap: 2rem;
+  }
+
+  #destaque, #conteudo{
+    padding: 0.5rem 1rem;
   }
 }
 
@@ -21,10 +19,6 @@
   }
   #li-menu {
     display: flex;
-  }
-
-  #destaque{
-    padding: 0.5rem 2rem;
   }
 }
 
